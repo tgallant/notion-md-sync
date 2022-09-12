@@ -9,7 +9,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: tryfabric/markdown-to-notion@v1
+      - uses: tryfabric/markdown-to-notion@main
         with:
           # The local path of the Markdown file to load.
           file: ./docs/test.md
