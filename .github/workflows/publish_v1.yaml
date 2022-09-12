@@ -20,8 +20,4 @@ jobs:
 
           # The ID of the page you want the file loaded into. See the "How do I
           # find the page ID?" FAQ for more info.
-          notion_id: YourPageID
-
-          # Whether to delete the existing block.
-          # Default: true
-          delete_existing: false
+          notion_id: 86b00f1cdfc4493595ef89d0f9950453
