@@ -9,6 +9,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
       - uses: tryfabric/markdown-to-notion@main
         with:
           # The local path of the Markdown file to load.
