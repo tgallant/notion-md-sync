@@ -1,0 +1,27 @@
+---
+name: Publish v1
+
+on:
+  workflow_dispatch:
+    inputs: null
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tryfabric/markdown-to-notion@v1
+        with:
+          # The local path of the Markdown file to load.
+          file: ./docs/test.md
+
+          # The token to use to access the Notion API. See the "How do I get a
+          # token?" FAQ for more info.
+          notion_token: ${{ secrets.NOTION_KEY }}
+
+          # The ID of the page you want the file loaded into. See the "How do I
+          # find the page ID?" FAQ for more info.
+          notion_id: YourPageID
+
+          # Whether to delete the existing block.
+          # Default: true
+          delete_existing: false
